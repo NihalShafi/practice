@@ -1,0 +1,41 @@
+:root {
+    --def-transition-duration: 0.3s;
+  }
+
+figcaption::before {
+    transition-duration: var(--def-transition-duration);
+    transition-timing-function: ease-in-out;
+    content: "";
+  
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(21, 22, 24, 0.07) 0%,
+      #151618e3 100%
+    );
+    /* z-index: -1; */
+    opacity: 1;
+    transition: background;
+  }
+
+  figure:hover figcaption::before {
+    transition-duration: .3s;
+    
+    transition-timing-function: ease-in-out;
+
+    background: linear-gradient(
+      180deg,
+      rgba(21, 22, 24, 0.329) 0%,
+      #151618e3 100%
+    );
+ 
+    
+  }
+
+  figcaption::before {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+  }
+
+
+
