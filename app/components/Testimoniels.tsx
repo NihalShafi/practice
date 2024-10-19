@@ -8,7 +8,7 @@ function Testimoniels() {
         <h1 className="text-5xl font-bold text-nowrap">Testimonials</h1>
 
         <p className="font-bold w-[30%] text-sm">
-          Don't just take our word for it - hear from our satisfied clients who
+          Don&apos;t just take our word for it - hear from our satisfied clients who
           have experienced the transformative impact of our Al text tool
         </p>
 
@@ -51,7 +51,7 @@ function Testimoniels() {
           <div>
             <p className=" text-lg font-semibold font-sans">
               &quot;I really appreciate how fast the website loads and how
-              smoothly everything runs, even on my mobile device. It's clear
+              smoothly everything runs, even on my mobile device. It&apos;s clear
               that a lot of effort went into optimizing the performance, which
               makes the user experience much more enjoyable. &quot;
             </p>
