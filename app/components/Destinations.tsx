@@ -7,7 +7,7 @@ import { data } from "@/app/index";
 function Destinations() {
   return (
     <section className="flex flex-col w-full items-center justify-center  mt-10 h-[850px] px-10">
-      <div className="">
+      <div className="w-full ">
         <h1 className="text-4xl font-bold  ">Different Destinations</h1>
       </div>
 

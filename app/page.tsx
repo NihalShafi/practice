@@ -4,12 +4,13 @@ import Destinations from "./components/Destinations";
 import Testimoniels from "./components/Testimoniels";
 import Showcase from "./components/Showcase";
 import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 export default function Home() {
   return (
-    <main className="flex dark:bg-slate-800 bg-slate-100 min-h-screen flex-col items-center justify-between px-14 py-9">
+    <main className="flex dark:bg-slate-800 bg-slate-100 min-h-screen flex-col items-center justify-between px-14 pt-9">
       <nav className="flex z-20  bg-white bo top-0 fixed  items-center justify-between px-8 py-5 w-full  ">
         <div>
-          <h1 className="font">Nghastly</h1>
+          <img src="./images/aially.png" alt="" />
         </div>
         <ul className="flex gap-3">
           <li>Home</li>
@@ -17,7 +18,7 @@ export default function Home() {
           <li>FAQ</li>
         </ul>
 
-        <button className="rounded-full outline outline-black outline-1 bg-blue-800 text-white w-24 py-3">
+        <button className="rounded-full outline outline-black outline-1 bg-[#54ea54] bg w-24 py-3">
           Sign Up
         </button>
       </nav>
@@ -52,6 +53,18 @@ export default function Home() {
                 More
               </a>
             </div>
+
+            <div className="flex mt-6 justify-between w-full text-white">
+              <div className="">
+                <h1 className="text-[2rem] font-bold">4.8</h1>
+                <h3>Rating on AppStore</h3>
+              </div>
+
+              <div className="">
+                <h1 className="text-[2rem] font-bold">700k+</h1>
+                <h3>Acive users</h3>
+              </div>
+            </div>
           </div>
         </div>
         <div className=" rounded-sm  flex h-full flex-col justify-end items-center w-1/2">
@@ -70,6 +83,7 @@ export default function Home() {
       <Showcase />
       <Testimoniels />
       <Pricing />
+      <Footer />
     </main>
   );
 }
