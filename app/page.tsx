@@ -3,12 +3,13 @@ import "./style.css";
 import Destinations from "./components/Destinations";
 import Testimoniels from "./components/Testimoniels";
 import Showcase from "./components/Showcase";
+import Pricing from "./components/Pricing";
 export default function Home() {
   return (
-    <main className="flex bg-slate-100 min-h-screen flex-col items-center justify-between px-14 py-9">
+    <main className="flex dark:bg-slate-800 bg-slate-100 min-h-screen flex-col items-center justify-between px-14 py-9">
       <nav className="flex z-20  bg-white bo top-0 fixed  items-center justify-between px-8 py-5 w-full  ">
         <div>
-          <h1>Nghastly</h1>
+          <h1 className="font">Nghastly</h1>
         </div>
         <ul className="flex gap-3">
           <li>Home</li>
@@ -21,41 +22,54 @@ export default function Home() {
         </button>
       </nav>
 
-      <section className="h-[90vh]  flex items-center justify-center mt-16 w-full box1 px-10 rounded-3xl bg-blue-600">
-        <div className="flex   justify-center px-4 flex-col w-1/2">
-          <h1 className="text-[3.4rem]   text-wrap font-extrabold font-sans text-white">
-            Unleash Your Cretive Ideas to Us We make your Creative ideas to
-            Reality
-          </h1>
-          <footer className="text-white font-mono mt-3 ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex minima
-            vero delectus ad inventore esse quo, fuga labore veniam aut autem
-            aliquam corrupti voluptatem, debitis repudiandae optio repellat
-            eaque ipsam.
-          </footer>
-          <div className="flex mt-6 h-12 ">
-            <button className="rounded-full button1 ml-6 w-[150px] transition-all duration-75 ease-in-out hover:w-[170px] p-2 bg-red-400 text-white relative group">
-              Know More
-              <span className="inline-block ml-2 transform transition-transform duration-200 ease-in-out group-hover:translate-x-1">
-                →
-              </span>
-            </button>
+      <section className="h-[80vh]  flex items-center justify-center mt-16 w-full box1 px-10 rounded-3xl relative bg-[#181a1b]">
+        <div className="bg-gradient-radial from-slate-50 to-50% blur-2xl rounded-full w-[550px] h-[550px]  absolute right-36" />
+        <div className="flex  items-center justify-center px-4 flex-col w-1/2">
+          <div className="w-[60%]">
+            <h1 className="text-[3rem]   text-wrap font-extrabold font-sans text-white">
+              Unleash the full potential of Al
+            </h1>
+            <div className="">
+              <h4 className="text-white text-wrap  font-mono mt-3 ">
+                Al Ally is a versatile assistant that utilizes state-of-the-art
+                natural language processing to provide real-time support and
+                assistance across various domains
+              </h4>
+            </div>
+
+            <div className="flex w-[93%]   items-center    mt-6 h-12 ">
+              <button className="rounded-full  button1  w-[150px] transition-all duration-75 ease-in-out hover:w-[170px] p-2 bg-[#54ea54] outline-1 outline outline-slate-950 outline-offset-2  text-slate-950  group">
+                <span className="font-semibold text-black">Get the App</span>
+                <span className="inline-block ml-2 transform transition-transform duration-200 ease-in-out group-hover:translate-x-1">
+                  →
+                </span>
+              </button>
+
+              <a
+                href="3"
+                className="text-white ml-8 hover:underline underline-offset-4"
+              >
+                More
+              </a>
+            </div>
           </div>
         </div>
-        <div className=" rounded-sm  flex justify-center w-1/2">
-          <Image
-            className=""
-            src="/01.png"
-            alt="o1.png"
-            width={300}
-            height={300}
-          />
+        <div className=" rounded-sm  flex h-full flex-col justify-end items-center w-1/2">
+          <div className="relative ">
+            <Image
+              className=""
+              src="/images/Layer 1.png"
+              alt="o1.png"
+              width={400}
+              height={400}
+            />
+          </div>
         </div>
       </section>
       <Destinations />
-
-      <Showcase/>
-      <Testimoniels/>
+      <Showcase />
+      <Testimoniels />
+      <Pricing />
     </main>
   );
 }
