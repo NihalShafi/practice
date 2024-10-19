@@ -7,13 +7,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { collapse } from "..";
+import Image from "next/image";
 
 function Showcase() {
   const [openItem, setOpenItem] = useState<string | null>(null);
   return (
     <section className="h-[500px]  w-full flex px-10  mt-10 justify-between  items-center">
       <div className="w-[50%] h-full items-center flex-col-reverse flex">
-        <img className="w-[300px] object-cover justify-self-end" src="./images/Layer 2.png" />
+        <Image alt="" width={300} height={100} className="w-[300px] object-cover justify-self-end" src="/images/Layer 2.png" />
       </div>
 
       <div className="w-[50%] h-full flex items-center justify-center">

@@ -1,5 +1,6 @@
 import { Crown, Lightbulb, Zap } from "lucide-react";
 import { pricing } from "..";
+import Image from "next/image";
 
 function Pricing() {
   return (
@@ -107,11 +108,11 @@ function Pricing() {
 
             <div className="w-full    mt-5 flex gap-4">
             <button>
-              <img width={180} src="./images/appstore.png" alt="" />
+              <Image width={180} height={100} src="/images/appstore.png" alt="" />
             </button>
 
             <button>
-              <img width={180} src="./images/playstore.png" alt="" />
+              <Image width={180} height={100} src="/images/playstore.png" alt="" />
             </button>
           </div>
           </div>
@@ -120,9 +121,9 @@ function Pricing() {
         </div>
 
         <div className="w-[50%] h-full items-center flex-col-reverse flex">
-          <img
+          <Image alt="" width={1000} height={1000}
             className="w-[300px] object-cover justify-self-end"
-            src="./images/layer3.png"
+            src="/images/layer3.png"
           />
         </div>
       </div>

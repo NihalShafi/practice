@@ -1,14 +1,14 @@
 export const data = [
   {
     imgurl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/High_school_students%2C_SAS_Pudong.jpg/420px-High_school_students%2C_SAS_Pudong.jpg",
+      "/images/destinations/01.png",
     title: "Students",
     descreption:
       "Ai Ally can assist in research , provide learning materials , and answer questions",
   },
 
   {
-    imgurl: "https://www.avivaindia.com/sites/default/files/9%20to%205.jpg",
+    imgurl: "/images/destinations/02.png",
     title: "Professionals",
     descreption:
       "Ai Ally can provide quick access to relevant information and offer data analysis insights",
@@ -16,7 +16,7 @@ export const data = [
 
   {
     imgurl:
-      "https://assets.entrepreneur.com/content/3x2/2000/20200228142303-GettyImages-1087147182.jpeg",
+      "/images/destinations/03.png",
     title: "Writers",
     descreption:
       "Ai Ally can help writers by generating ideas, suggesting improvements in writing style",

@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <section className="w-full items-center flex-col  flex py-8 px-6">
       <div className=" w-full flex justify-between items-center px-5 py-2 ">
         <div className="w-[20%]">
-          <img src="./images/aially.png" alt="" />
+          <Image width={100} height={100} src="/images/aially.png" alt="" />
         </div>
 
         <div className="flex ">

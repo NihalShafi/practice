@@ -10,7 +10,7 @@ export default function Home() {
     <main className="flex dark:bg-slate-800 bg-slate-100 min-h-screen flex-col items-center justify-between px-14 pt-9">
       <nav className="flex z-20  bg-white bo top-0 fixed  items-center justify-between px-8 py-5 w-full  ">
         <div>
-          <img src="./images/aially.png" alt="" />
+          <Image width={100} height={100} src="/images/aially.png" alt="" />
         </div>
         <ul className="flex gap-3">
           <li>Home</li>

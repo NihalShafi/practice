@@ -41,8 +41,10 @@ function Destinations() {
               <div className="z-10 absolute rounded-full top-5 left-3 p-1 outline outline-1 outline-black text-black bg-white">
                 Try it now
               </div>
-              <img
+              <Image
                 src={t.imgurl}
+                width={1000}
+                height={1000}
                 className="w-full h-full object-cover"
                 alt=""
               />
@@ -64,32 +66,7 @@ function Destinations() {
           
         </button>
       </div>
-      {/* <div className="flex gap-4 justify-between w-full ">
-        <div className="w-1/3 flex-col items-center justify-between  py-6  flex min-h-[450px] ">
-          <div className="rounded-2xl bg-orange-600 overflow-hidden w-[80%] h-72   relative">
-            <div className="z-10 absolute rounded-full top-5 left-3 p-1 outline outline-1 outline-black text-black bg-white">
-              Try it now
-            </div>
-            <img src="./images/nihal.png" alt="" />
-          </div>
-
-          <div className="w-full px-11 ">
-            <h1 className="text-2xl">Students</h1>
-            <p className="mt-2">
-              Ai Ally can assist in research, provide 
-              learning materials, and answer questions
-            </p>
-          </div>
-        </div>
-
-
-      
-
-        
-
-
-        
-      </div> */}
+     
     </section>
   );
 }
